@@ -1,0 +1,14 @@
+{% if section.settings.enable_announcement %}
+<div class="bg-blue-500 text-white py-2">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p class="text-sm">
+      {{ section.settings.announcement_text }}
+      {% if section.settings.button_text != blank and section.settings.button_url != blank %}
+        <a href="{{ section.settings.button_url }}" class="underline hover:text-blue-100 ml-2">
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+    </p>
+  </div>
+</div>
+{% endif %}

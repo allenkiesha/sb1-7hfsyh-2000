@@ -1,0 +1,29 @@
+<div class="bg-gray-100 py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+      <h2 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+      <p class="text-gray-600 mb-6">Stay updated with our latest products and exclusive offers!</p>
+      
+      <form action="/contact#newsletter-signup" method="post" class="max-w-md mx-auto">
+        <input type="hidden" name="form_type" value="customer" />
+        <input type="hidden" name="utf8" value="✓" />
+        
+        <div class="flex gap-4">
+          <input
+            type="email"
+            name="contact[email]"
+            required
+            placeholder="Enter your email"
+            class="flex-1 px-4 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          />
+          <button 
+            type="submit"
+            class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+          >
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
